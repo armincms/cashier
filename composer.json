@@ -1,0 +1,32 @@
+{
+    "name": "armincms/cashier",
+    "description": "Armin CMS payment gateway Integration tool.",
+    "keywords": [
+        "laravel",
+        "nova"
+    ],
+    "license": "MIT",
+    "require": {
+        "php": ">=7.1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Armincms\\Cashier\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Armincms\\Cashier\\CashierServiceProvider"
+            ],
+            "aliases": {
+                "Cashier": "Armincms\\Cashier\\Facades\\Cashier"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
